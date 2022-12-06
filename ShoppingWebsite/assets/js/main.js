@@ -61,7 +61,9 @@ input.addEventListener('keyup',()=>{
         if (exist.length===0) {
             document.querySelector('#show').classList.remove('d-none')
             available.classList.add('d-none')
-        } 
+        }else if(input.value.trim().length===0){
+            available.classList.add('d-none')
+        }
         else {
             document.querySelector('#show').classList.add('d-none')
             available.classList.remove('d-none')
