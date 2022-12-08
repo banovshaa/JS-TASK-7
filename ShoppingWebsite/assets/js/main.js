@@ -35,7 +35,7 @@ function Common(data){
         .then(response=>response.json())
         .then(data=>{
             console.log(data);
-           card.remove()
+            card.parentElement.parentElement.remove()
         })
         .catch(error=>console.log(error))
        }
